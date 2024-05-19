@@ -1,0 +1,39 @@
+<div class="container">
+
+    <br>
+
+    <div style="padding: 20px;">
+        
+        <h1 style="color: #c81d25;"><b>Articles by Topic</b></h1>   
+         
+        <hr>
+
+        <div class="row">
+
+                <div class="col-12" *ngFor="let category of allArticlesData">
+
+                    <h3 class="articleListCardHead"><a routerLink="/articlesByTopic/{{category.categoryId}}">{{category.categoryName}}</a></h3>
+                        
+                    <div style="margin: 5px;" *ngFor="let article of category.articles">
+                       <a style="background-color: #FFCDB2; padding: 2px 10px; border-radius: 3px;" routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+                    </div>
+                    <div>
+                        <a style="margin: 5px; text-decoration: underline;" routerLink="/articlesByTopic/{{category.categoryId}}"><i>Read more about {{category.categoryName}}</i></a>
+                    </div>  
+
+                    <hr>
+
+                </div>
+                
+            
+        </div>
+
+        <!-- <br>
+        <div class="img"></div> -->
+
+        <br>
+
+
+    </div>
+
+</div>

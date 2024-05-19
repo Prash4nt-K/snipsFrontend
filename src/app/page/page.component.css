@@ -1,0 +1,35 @@
+
+
+.outerCard {
+    background-color: #d8e2dc; 
+    padding: 12px;
+    border-radius: 4px; 
+}
+
+.innerCard {
+    background-color: #2F4F4F; 
+    border-radius: 0px 0px 4px 4px; 
+    color: white; 
+    padding: 20px; 
+    font-family: 'Consolas';
+    font-size: medium;
+
+    overflow-x: auto; 
+    white-space: nowrap;
+}
+
+.cardHead {
+    background-color: #2F4F4F; 
+    color: white; 
+    padding: 10px; 
+    margin-bottom: 0px;
+    border-radius: 4px 4px 0px 0px;
+    margin-bottom: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+

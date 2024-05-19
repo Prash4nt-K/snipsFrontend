@@ -1,0 +1,25 @@
+<div class="container">
+
+    <br>
+
+    <div>
+        <h1 style="color: #c81d25;"><b>All articles on {{articlesByTopic.categoryName}}</b></h1>    
+    </div>
+
+    <hr>
+
+    <div *ngFor="let article of articlesByTopic.articles">
+        <div style="margin: 5px;">  
+            <a style="background-color: #FFCDB2; padding: 2px 10px; border-radius: 3px;" routerLink="/article/{{article.articleId}}"><i>{{article.articleName}}</i></a>
+        </div>  
+    </div>   
+
+    <hr>
+
+    <br>
+
+    <!-- <div class="img"></div> -->
+
+    <br>
+    
+</div>

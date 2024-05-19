@@ -1,0 +1,8 @@
+.img {
+    background-image:  url("src\assets\images\graphics.jpg");
+    background-size: cover;
+    width: auto;
+    height: 45vh;
+    display: block;
+    opacity: 0.80;
+}

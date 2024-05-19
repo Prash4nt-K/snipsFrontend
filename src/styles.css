@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-size: 22px;
+    font-family: "Source Serif Pro", serif;
+    color: #2b2d42;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat',sans-serif;
+}
+
+pre {
+    white-space: pre-wrap; 
+    word-break: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2d42;
+}
+
+a:hover {
+    color: #ff5a5f;
+}
+
+.toggleBtn {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ham {
+    display: none;
+}
+
+.cross {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .ham {
+        display: inline;
+    }
+
+    body{
+        font-size: medium;
+    }
+
+    .toggleBtn {
+        display: none;
+    }
+}

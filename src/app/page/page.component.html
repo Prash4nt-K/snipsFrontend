@@ -1,0 +1,79 @@
+<div class="container">
+
+    
+    <br>
+
+    <div>
+        <h3 style="text-align: center; color: #c81d25;"><b>{{articleData.articleName}}</b></h3>    
+    </div>
+
+    <hr>
+    <br>
+
+    <div *ngIf="articleData.component">
+        <div [innerHTML]="varComponent"></div>
+        <br>
+    </div>
+
+
+    <br>
+    <div *ngIf="articleData.intro">
+        <div [innerHTML]="varIntro"></div>
+        <br>
+    </div>
+
+
+    <div *ngIf="articleData.html" class="outerCard">
+        <pre class="cardHead">HTML</pre>
+        <div class="innerCard">
+            <div [innerHTML]="varHtml"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div *ngIf="articleData.htmlComment">
+        <div [innerHTML]="varHtmlComment"></div>
+        <br>
+    </div>
+
+
+    <div *ngIf="articleData.css" class="outerCard">
+        <pre class="cardHead">CSS</pre>
+        <div class="innerCard">
+            <div [innerHTML]="varCss"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div *ngIf="articleData.cssComment">
+        <div [innerHTML]="varCssComment"></div>
+        <br>
+    </div>
+
+
+    <div *ngIf="articleData.ts" class="outerCard">
+        <pre class="cardHead">TypeScript</pre>
+        <div class="innerCard">
+            <div [innerHTML]="vartTs"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div *ngIf="articleData.tsComment">
+        <div [innerHTML]="varTsComment"></div>
+        <br>
+    </div>
+
+
+    <div *ngIf="articleData.closure">
+        <div [innerHTML]="varClosure"></div>
+        <br>
+    </div>
+
+
+</div>
+
+
